@@ -1,7 +1,7 @@
 # Puppet package provider for dnf, the replacement for yum 
 # https://github.com/rpm-software-management/dnf
 
-require 'puppet/provider/package/pip'
+require 'puppet/provider/package/yum'
 
 Puppet::Type.type(:package).provide :dnf,
   :parent => :yum do
